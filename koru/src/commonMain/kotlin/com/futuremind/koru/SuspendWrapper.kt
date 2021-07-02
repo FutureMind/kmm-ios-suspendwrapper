@@ -5,7 +5,7 @@ import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 
 
-class SuspendWrapper<T>(
+class SuspendWrapper<T : Any>(
     private val scopeProvider: ScopeProvider?,
     private val freezeWrapper: Boolean,
     private val suspender: suspend () -> T
